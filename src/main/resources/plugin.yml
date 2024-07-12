@@ -1,0 +1,17 @@
+name: HologramChat
+version: '${project.version}'
+main: me.niko302.hologramchat.HologramChat
+api-version: '1.20'
+depend: [ProtocolLib]
+softdepend: [PlaceholderAPI,Essentials, ChatControlRed, ProtocolLib]
+
+commands:
+  hologramchatreload:
+    description: Reloads the configuration for HologramChat.
+    usage: /<command>
+    permission: hologramchat.reload
+
+permissions:
+  hologramchat.reload:
+    description: Allows the user to reload the configuration for HologramChat.
+    default: op
