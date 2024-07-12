@@ -16,10 +16,9 @@
 </ul>
 
 <div align="center">
-    <h2>Spoiler: Config.yml</h2>
-</div>
-
-<pre><code class="yaml">
+    <button onclick="toggleSpoiler('config')">Spoiler: Config.yml</button>
+    <div id="configSpoiler" style="display: none;">
+        <pre><code class="yaml">
 # The vertical offset for the messages (height above the player's head)
 yOffset: 0.0
 # How often (in ticks) the text following updates. 1 tick = 1/20 second
@@ -67,7 +66,9 @@ groups:
     permission: "hologramchat.staff"
     # The weight of this group (higher values take precedence)
     weight: 30
-</code></pre>
+        </code></pre>
+    </div>
+</div>
 
 <div align="center">
     <h2>MUST BE INSTALLED TO WORK:</h2>
@@ -120,3 +121,14 @@ groups:
         </tr>
     </tbody>
 </table>
+
+<script>
+    function toggleSpoiler(spoilerId) {
+        var spoiler = document.getElementById(spoilerId + 'Spoiler');
+        if (spoiler.style.display === 'none') {
+            spoiler.style.display = 'block';
+        } else {
+            spoiler.style.display = 'none';
+        }
+    }
+</script>
