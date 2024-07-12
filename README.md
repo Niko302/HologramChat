@@ -97,9 +97,3 @@ groups:
         </tr>
     </tbody>
 </table>
-
-<div align="center">
-    <h2>Please report bugs before posting a negative review.</h2>
-    <p><a href="https://github.com/Niko302/HologramChat/issues">https://github.com/Niko302/HologramChat/issues</a></p>
-    <h2>Give me a ⭐ ⭐ ⭐ ⭐ ⭐ review if satisfied</h2>
-</div>
