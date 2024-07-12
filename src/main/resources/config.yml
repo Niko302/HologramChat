@@ -2,7 +2,7 @@
 yOffset: 0.0
 
 # How often (in ticks) the text following updates. 1 tick = 1/20 second
-textFollowUpdateInterval: 5
+textFollowUpdateInterval: 1
 
 # The base duration (in seconds) that the messages will be displayed
 displayDuration: 3
