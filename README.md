@@ -17,7 +17,7 @@
 
 <div align="center">
     <h2>Config.yml</h2>
-    <p><a href="https://github.com/Niko302/HologramChat/blob/master/src/main/resources/config.yml" target="_blank">View Config.yml on GitHub</a></p>
+    <p><a href="https://github.com/Niko302/HologramChat/blob/master/src/main/resources/config.yml" target="_blank">Config.yml</a></p>
 </div>
 
 <div align="center">
