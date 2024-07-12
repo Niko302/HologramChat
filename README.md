@@ -22,27 +22,50 @@
 <pre><code class="yaml">
 # The vertical offset for the messages (height above the player's head)
 yOffset: 0.0
+# How often (in ticks) the text following updates. 1 tick = 1/20 second
 textFollowUpdateInterval: 1
+# The base duration (in seconds) that the messages will be displayed
 displayDuration: 3
+# The maximum length of each line in the message
 lineLength: 30
+# The additional duration (in seconds) to display the message per line
 increaseDisplayDurationPerLine: 1
+# The radius around the player in which the messages will be displayed
 radius: 50
+# A list of worlds where the chat bubbles are disabled
 disabledWorlds:
   - "custom_world_1"
   - "custom_world_2"
+# Option to see your own message hologram
 seeOwnMessageHologram: true
+
+# Message groups configuration
 groups:
+  # Default group configuration
   example:
+    # The format of the message
     messageFormat: "&7EXAMPLEMESSAGE: &f<message> [HP: %player_health%]"
+    # The permission required for this message format
     permission: "hologramchat.example"
+    # The weight of this group (higher values take precedence)
     weight: 10
+
+  # Default group configuration
   default:
+    # The format of the message
     messageFormat: "#C0C0C0<message>"
+    # The permission required for this message format
     permission: "hologramchat.default"
+    # The weight of this group (higher values take precedence)
     weight: 20
+
+  # Staff group configuration
   staff:
+    # The format of the message
     messageFormat: "&7[&4STAFF&7] #FF8000<message>"
+    # The permission required for this message format
     permission: "hologramchat.staff"
+    # The weight of this group (higher values take precedence)
     weight: 30
 </code></pre>
 
