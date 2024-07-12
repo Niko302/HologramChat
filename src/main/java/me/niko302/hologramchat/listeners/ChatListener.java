@@ -195,7 +195,7 @@ public class ChatListener implements Listener {
                     player.getLocation().add(0, yOffset - (0.25 * i), 0),
                     EntityType.ARMOR_STAND
             );
-            armorStand.setVisible(false); // Set invisible from the start
+            armorStand.setVisible(false);
             armorStand.setGravity(false);
             armorStand.setCanPickupItems(false);
             armorStand.setCustomNameVisible(true);
