@@ -3,7 +3,7 @@ version: '${project.version}'
 main: me.niko302.hologramchat.HologramChat
 api-version: '1.20'
 depend: [ProtocolLib]
-softdepend: [PlaceholderAPI, Essentials]
+softdepend: [PlaceholderAPI]
 
 commands:
   hologramchatreload:
