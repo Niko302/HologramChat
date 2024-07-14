@@ -25,7 +25,6 @@
     <p><a href="https://www.spigotmc.org/resources/protocollib.1997/">Protocollib</a></p>
     <h2>OPTIONAL:</h2>
     <p><a href="https://www.spigotmc.org/resources/placeholderapi.6245/">PlaceholderAPI (for adding placeholders)</a></p>
-    <p><a href="https://essentialsx.net/downloads.html">EssentialsX (for private messages)</a></p>
 </div>
 
 <h2>Commands</h2>
