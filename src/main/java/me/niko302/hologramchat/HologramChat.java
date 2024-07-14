@@ -4,7 +4,6 @@ import lombok.Getter;
 import me.niko302.hologramchat.commands.Commands;
 import me.niko302.hologramchat.config.ConfigManager;
 import me.niko302.hologramchat.listeners.ChatListener;
-import me.niko302.hologramchat.listeners.EssentialsListener;
 import org.bstats.bukkit.Metrics;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -17,7 +16,6 @@ public final class HologramChat extends JavaPlugin {
 
     private ConfigManager configManager;
     private ChatListener chatListener;
-    private EssentialsListener essentialsListener;
 
     @Override
     public void onEnable() {
@@ -27,12 +25,6 @@ public final class HologramChat extends JavaPlugin {
         // Register event listeners
         chatListener = new ChatListener(this);
         getServer().getPluginManager().registerEvents(chatListener, this);
-
-        // Check if Essentials is enabled and register EssentialsListener
-        if (getServer().getPluginManager().isPluginEnabled("Essentials")) {
-            essentialsListener = new EssentialsListener(this);
-            getServer().getPluginManager().registerEvents(essentialsListener, this);
-        }
 
         // Register commands
         this.getCommand("hologramchatreload").setExecutor(new Commands(this));

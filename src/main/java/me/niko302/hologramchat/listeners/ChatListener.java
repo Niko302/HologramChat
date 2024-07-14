@@ -49,23 +49,6 @@ public class ChatListener implements Listener {
         displayHologramMessage(player, event.getMessage());
     }
 
-    public void displayPrivateMessageHologram(Player sender, Player recipient, String message) {
-        // Display message to the sender if configured
-        if (plugin.getConfigManager().isSeeOwnMessageHologram()) {
-            displayHologramMessage(sender, message);
-        }
-
-        // Hide holograms from other players, but make sure it's visible to both the sender and the recipient
-        List<ArmorStand> armorStands = playerMessages.get(sender.getUniqueId());
-        if (armorStands != null) {
-            for (Player onlinePlayer : Bukkit.getOnlinePlayers()) {
-                if (!onlinePlayer.equals(sender) && !onlinePlayer.equals(recipient)) {
-                    hideHologramFromPlayer(onlinePlayer, armorStands);
-                }
-            }
-        }
-    }
-
     public void displayHologramMessage(Player player, String message) {
         World world = player.getWorld();
 
