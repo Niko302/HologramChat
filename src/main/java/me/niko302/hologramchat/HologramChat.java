@@ -31,7 +31,7 @@ public final class HologramChat extends JavaPlugin {
 
         new Metrics(this, 22619);
 
-        new com.jeff_media.updatechecker.UpdateChecker(this, com.jeff_media.updatechecker.UpdateCheckSource.SPIGOT, "00000")
+        new com.jeff_media.updatechecker.UpdateChecker(this, com.jeff_media.updatechecker.UpdateCheckSource.SPIGOT, "117992")
                 .setNotifyRequesters(false)
                 .setNotifyOpsOnJoin(false)
                 .setUserAgent(com.jeff_media.updatechecker.UserAgentBuilder.getDefaultUserAgent())
